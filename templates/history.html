@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   History & Credit
+{% endblock %}
+
+{% block header %}
+
+  <div class="container-fluid">
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mt-2">
+          <li class="nav-item"><a class="nav-link" href="/history">History & Credit</a></li><br><br>
+          <li class="nav-item"><a class="nav-link" href="/book">Book Tickets</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index">Home</a></li>
+        </ul>
+        <ul class="navbar-nav ms-auto mt-2">
+          <li class="nav-item"><a class="nav-link" href="/password">Change Password</a></li>
+          <li class="nav-item"><a class="nav-link" href="/logout">Log Out</a></li>
+      </ul>
+    </div>
+    </div>
+<div class="section">
+{% endblock %}
+
+{% block main %}
+<style>
+    .fix{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+</style>
+<br><br>
+<div class="fix">
+<h4>You have ${{ cash }} in your credit.</h4>
+<br>
+<table class="table table-bordered">
+        <thead>
+            <tr class="table-info">
+                <th class="text-start">Island</th>
+                <th class="text-end">Ticket</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">Date</th>
+                <th class="text-end">Time</th
+            </tr>
+        </thead>
+        <tbody>
+            {% for history in history %}
+            <tr class="table-light">
+                    <td class="text-start">{{ history ["island"] }}</td>
+                    <td class="text-end">{{ history ["ticket"] }}</td>
+                    <td class="text-end">${{ history ["price"] }}</td>
+                    <td class="text-end">{{ history ["date"] }}/{{ history ["year"] }}</td>
+                    <td class="text-end">{{ history ["time"] }}</td>
+            </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Purchase
+{% endblock %}
+
+{% block header %}
+
+  <div class="container-fluid">
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mt-2">
+          <li class="nav-item"><a class="nav-link" href="/history">History & Credit</a></li><br><br>
+          <li class="nav-item"><a class="nav-link" href="/book">Book Tickets</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index">Home</a></li>
+        </ul>
+        <ul class="navbar-nav ms-auto mt-2">
+          <li class="nav-item"><a class="nav-link" href="/password">Change Password</a></li>
+          <li class="nav-item"><a class="nav-link" href="/logout">Log Out</a></li>
+      </ul>
+    </div>
+    </div>
+{% endblock %}
+
+{% block main %}
+<style>
+  body{
+   overflow: hidden;
+   position: 100%;
+}
+</style>
+ <div class="row bg">
+  <div class="container">
+   <div class="text">
+    <p style="text-align:center; font-size:large; color: green; font-style:bold" >You have ${{ cashes }} in the credit.</p>
+<form action="/book" method="post">
+    <!-- Create a form for users to submit a name, a month, and a day -->
+      <p>For confirmation please choose the name of the Island manually</p>
+      <div class="mb-3">
+        <select class="form-select mx-auto w-auto" name="island">
+            <option disabled selected >Island</option>
+            {% for info in info %}
+                <option type="text" value="{{ info ['island'] }}" name="island">{{ info ['island'] }}</option>
+                {% endfor %}
+        </select>
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off" class="form-control mx-auto w-auto" min="1" max="100" name="ticket" placeholder="Ticket" type="number">
+    </div>
+    <div class="mb-3">
+      <input autocomplete="off" class="form-control mx-auto w-auto" min="1" max="12" name="month" placeholder="Month" type="number"><br>
+      <p> We dont provide trips at the last dates (30 & 31).</p>
+      </div>
+      <div class="mb-3">
+      <input autocomplete="off" class="form-control mx-auto w-auto" min="1" max="29" name="day" placeholder="Day" type="number">
+      </div>
+      <div class="mb-3">
+      <input autocomplete="off" class="form-control mx-auto w-auto" min="2023" max="2026" name="year" placeholder="Year" type="number">
+  </div>
+    <button class="btn btn-primary" type="submit">Purchase</button>
+    </form>
+</div>
+</div>
+</div>
+{% endblock %}

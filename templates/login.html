@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block header %}
+<ul class="navbar-nav ms-auto mt-2">
+    <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+{% endblock %}
+{% block main %}
+<style>
+    body{
+     overflow: hidden;
+     position: 100%;
+  }
+</style>
+   <div class="row bg">
+    <div class="container">
+     <div class="text">
+    <form  autocomplete="off" action="/login" method="post">
+        <div class="mb-4">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="mb-4">
+            <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Log In</button>
+    </form>
+    </div>
+    </div>
+    </div>
+{% endblock %}

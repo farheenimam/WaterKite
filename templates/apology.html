@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+<style>
+    body{
+     overflow: hidden;
+     position: 100%;
+  }
+  </style>
+<div class="row bg">
+<div class="text-center">
+    <!-- https://memegen.link/ -->
+    <img alt="{{ top }}" class="border img-fluid" src="http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt=https://ychef.files.bbci.co.uk/624x351/p0bts7f3.jpg" title="{{ top }}">
+</div>
+</div>
+{% endblock %}

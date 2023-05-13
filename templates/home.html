@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Home
+{% endblock %}
+
+{% block main %}
+<style>
+  body{
+   overflow: hidden;
+   position: 100%;
+}
+</style>
+<form action="/" method="post">
+<div class="row bg">
+   <div class="container">
+     <div class="text">
+       <br><br>
+       <h5><b>Start your journey</b></h5>
+       <br><br>
+       <button class="btn btn-dark btn-lg" type="submit" onclick="window.location.href ='login.html';">Start</button>
+     </div>
+   </div>
+ </div>
+</form>
+{% endblock %}

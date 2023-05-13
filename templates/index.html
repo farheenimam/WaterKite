@@ -1,0 +1,222 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Welcome!
+{% endblock %}
+
+{% block header %}
+<style>
+  .header{
+    position: fixed;
+  }
+  #footer{
+    margin-top: 2%;
+  }
+</style>
+  <div class="container-fluid">
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mt-2">
+          <li class="nav-item"><a class="nav-link" href="/history">History</a></li><br><br>
+          <li class="nav-item"><a class="nav-link" href="/book">Purchase Tickets</a></li>
+        </ul>
+        <ul class="navbar-nav ms-auto mt-2">
+          <li class="nav-item"><a class="nav-link" href="/password">Change Password</a></li>
+          <li class="nav-item"><a class="nav-link" href="/logout">Log Out</a></li>
+      </ul>
+    </div>
+    </div>
+{% endblock %}
+{% block main %}
+<style>
+  .header{
+    overflow-x: hidden;
+    width: 100%
+  }
+  main{
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+</style>
+<div class="fix">
+<div class="island">
+ <br><br><br><br><br>
+<br><br>
+<h1 >We Are Offering Trips To The Top Most Islands</h1><br>
+<h4>Full 20 days trip package including food, five star resort, guide, transports and other
+ activites. So book your tickets for our latest trip to the Island of your choice. You just have to arrive at your destination
+and rest we will make your trip more comforatble and fun</h4>
+
+<br><br><img src="/static/background.jpg" class="img-fluid rounded mx-auto d-block" alt="img">
+<br><br>
+<h2>Mahé Island</h2>
+<br>
+<p>The Seychelles largest and main island, Mahe is home to the capital of Victoria and about 70,000 people
+(almost 90% of the nation's total). Still, the island retains its idyllic beauty, with 3,000-foot mountains
+and scores of gorgeous beaches. Many plants, including the so-called Jellyfish Tree and several rare orchids,
+are unique to Mahe's shores. The Seychelles Natural History Museum, the Botanical Gardens and the Codevar Craft
+Centre, all in Victoria, are not to be missed.</p>
+<p>Mahé is the largest island in the Seychelles archipelago, in the Indian Ocean off East Africa.
+Its terrain is defined by white-sandbeaches such as those in the popular resort area of Beau Vallon, and
+granite peaks including the rainforested Morne Seychellois.</p>
+<p>We are offering five star resorts in our package with 3 time meal and other fun activites.</p>
+<img src="/static/mahe-island.jpg" class="img-thumbnail" alt="Island"><img src="/static/resort.jpeg" class="img-thumbnail" alt="Resort">
+<br><br>
+<h4 style="text-align: center;">Location And Resort View</h4>
+<br><br>
+<div class="d-grid gap-2">
+<button class="btn btn-dark btn-lg" type="submit"><a href="/book">Book Tickets Now (per person $3,400)</a></button>
+</div><br><br>
+<h2>Tahiti Island</h2><br>
+<p>Tahiti is the largest and most famous of the 115 islands that comprise French Polynesia. It is known for
+its black sand beaches meeting the clear waters of the South Pacific, and the coral reefs that surround it.</p>
+<p>Tahiti’s volcanic origins have left the island with a dramatic landscape of high peaks plunging into the
+ocean, and deep hidden valleys in between. Tahiti-Nui’s highest peak in an impressive mountain range soars to
+7,339 feet. In contrast, Tahiti-Iti is comprised of a lower mountain range that reaches its height at 4,341 feet.
+Whereas Tahiti’s population is centered on Big Tahiti, Little Tahiti has remained rural, with an abundance of lush
+natural beauty. In fact, most of its southern half is only accessible through hiking or biking; a Tahitian expedition
+ cruise is the perfect base to explore this wild landscape.</p>
+<p>In addition to her breathtaking beaches, Tahiti is covered in tropical rainforest, lending it the distinctly
+ paradise-like feel that gave it the nickname “Island of Love.”</p>
+<p>We are offering five star resorts in our package with 3 time meal and other fun activites.</p>
+<br>
+<img src="/static/tahiti.jpg" class="img-thumbnail" alt="Island"><img src="/static/tahiti resort.webp" class="img-thumbnail" alt="Resort">
+<br><br>
+<h4 style="text-align: center;">Black Beach And Resort View</h4>
+<br><br>
+<div class="d-grid gap-2">
+<button class="btn btn-dark btn-lg" type="submit"><a href="/book">Book Tickets Now (per person $2,700)</a></button>
+</div><br><br>
+<h2>Maldives</h2><br>
+<p>The Maldives is the ultimate paradise destination, the one we all dream of visiting. Renowned for its spectacular beaches
+ and luxurious hotels, it’s a bucket list destination for a reason. In the heart of the Indian Ocean, this tropical archipelago
+ is of thousands of islands, clustered into larger atolls. Most Maldives travel packages start and end in the capital, Male,
+ where you can hop aboard a water plane or speedboat to head to your idyllic island getaway.</p>
+ <p> The Maldives resort vacation packages all but guarantee an incredibly special vacation, so you just need to choose: barefoot
+luxury, all-out glamor, family-friendly fun, or another version of bliss.</p>
+<p>We are offering five star resorts in our package with 3 time meal and other fun activites.</p>
+<br>
+<img src="/static/maldives.webp" class="img-thumbnail" alt="Island"><img src="/static/maldives resort.jpg" class="img-thumbnail" alt="Resort">
+<br><br>
+<h4 style="text-align: center;">Location And Resort View</h4>
+<br><br>
+<div class="d-grid gap-2">
+  <button class="btn btn-dark btn-lg" type="submit"><a href="/book">Book Tickets Now  (per person $4,500)</a></button>
+</div><br><br>
+<h2>Fiji Island</h2><br>
+<p>Fiji, a country in the South Pacific, is an archipelago of more than 300 islands. It's famed for rugged landscapes,
+ palm-lined beaches and coral reefs with clear lagoons. Its major islands, Viti Levu and Vanua Levu, contain most of the population.
+ Viti Levu is home to the capital, Suva, a port city with British colonial architecture. The Fiji Museum, in the Victorian-era Thurston
+ Gardens, has ethnographic exhibits</p>
+<p>Fiji is the island getaway that you have been looking for. The beautiful beaches alone will be enough, but there is so much more
+to these islands; from rain forests, resorts, shopping and crystal clear water to history, culture, villages and the legendary,
+genuinely friendly Fijian people.</p>
+<p>We are offering five star resorts in our package with 3 time meal and other fun activites.</p>
+<br>
+<img src="/static/fiji.webp" class="img-thumbnail" alt="Island"><img src="/static/fiji resort.jpg" class="img-thumbnail" alt="Resort">
+<br><br>
+<h4 style="text-align: center;">Location And Resort View</h4>
+<br><br>
+<div class="d-grid gap-2">
+  <button class="btn btn-dark btn-lg" type="submit"><a href="/book">Book Tickets Now (per person $1,500)</a></button>
+</div><br><br>
+<h2>Komodo Island</h2><br>
+<p>A popular destination for diving, Komodo Island also features Pink Beach. Actually comprised of a blend of white and red sand,
+ the beach is one of seven in the world where visitors can swim and snorkel. Listed as a UNESCO World Heritage Site, Komodo
+National Park was established in 1980. Although best known for its conservation of Komodo dragons, the park features various
+fauna such as buffalo, civets, cockatoos, macaques, deer, wild horses, and boars, as well as a variety of marine wildlife.
+Featuring vibrant waters, unique animals, beautiful beaches, and unspoiled corals, Komodo Island has recently been listed as one
+of the New Seven Wonders of Nature. It is sure to satisfy any adventure-seeking traveller. </p>
+<p>We are offering five star resorts in our package with 3 time meal and other fun activites.</p>
+<br>
+<img src="/static/Komodo Island.webp" class="img-thumbnail" alt="Island"><img src="/static/komodo resort.jpg" class="img-thumbnail" alt="Resort">
+<br><br>
+<h4 style="text-align: center;">Location And Resort View</h4>
+<br><br>
+<div class="d-grid gap-2">
+  <button class="btn btn-dark btn-lg" type="submit"><a href="/book">Book Tickets Now (per person $2,000)</a></button>
+</div><br><br>
+<h2>Bahamas</h2>
+<br>
+<p>The Bahamas, officially the Commonwealth of The Bahamas, is an island country within the Lucayan Archipelago of the West
+Indies in the North Atlantic. It takes up 97% of the Lucayan Archipelago's land area
+and is home to 88% of the archipelago's population. </p>
+<p>The best kept secret of The Bahamas is the country’s sheer size and diversity. With 16 major islands, The Bahamas is an unmatched
+destination, a heart-pounding adventure across 100,000 square miles of the world’s
+clearest ocean.</p>
+<p>We are offering five star resorts in our package with 3 time meal and other fun activites.</p>
+<br>
+<img src="/static/bahamas.jpg" class="img-thumbnail" alt="Island"><img src="/static/bhms resort.jpg" class="img-thumbnail" alt="Resort">
+<br><br>
+<h4 style="text-align: center;">Location And Resort View</h4>
+<br><br>
+<div class="d-grid gap-2">
+  <button class="btn btn-dark btn-lg" type="submit"><a href="/book">Book Tickets Now (per person $4,300)</a></button>
+</div><br><br>
+<h2>Saint Lucia</h2><br>
+<p>Saint Lucia, island state in the Caribbean Sea. It is the second largest of the Windward group in the Lesser Antilles and is located
+about 24 miles (39 km) south of Martinique and some 21 miles (34 km) northeast of Saint Vincent.</p>
+<p>St. Lucia is a Caribbean island nation known for its stunning beauty, spectacular pristine beaches, excellent West Indian cuisine,
+wonderful nature and wildlife and top notch resorts. This sun soaked tropical paradise draws in many of the world's rich and famous as well
+as adventurers from all around the world.</p>
+<p>We are offering five star resorts in our package with 3 time meal and other fun activites.</p>
+<br>
+<img src="/static/st lucia.jpg" class="img-thumbnail" alt="Island"><img src="/static/st resort.jpg" class="img-thumbnail" alt="Resort">
+<br><br>
+<h4 style="text-align: center;">Location And Resort View</h4>
+<br><br>
+<div class="d-grid gap-2">
+  <button class="btn btn-dark btn-lg" type="submit"><a href="/book">Book Tickets Now (per person $2,596)</a></button>
+</div><br><br>
+<h2>Palwan Island</h2><br>
+<p>Palawan is the largest island in the Palawan Province, in the western Philippines. The capital, Puerto Princesa, is known for the
+biodiverse Puerto Princesa Subterranean River National Park, where boats run along an underground river through vast caves. Off the east coast,
+Honda Bay’s islands are dotted with resorts. Farther out in the Sulu Sea, Tubbataha Reefs Natural Park has reefs teeming with marine life</p>
+<p>Palawan, one of the best places to visit in the Philippines, is consistently ranked as one of the best islands in the world, and for a good
+reason. It boasts white sand beaches and islands, clear blue waters, a spectacular variety of marine life and shipwreck sites, and majestic towering
+limestone cliffs.</p>
+<p>We are offering five star resorts in our package with 3 time meal and other fun activites.</p>
+<br>
+<img src="/static/palwan.jpg" class="img-thumbnail" alt="Island"><img src="/static/palwan resort.jpg" class="img-thumbnail" alt="Resort">
+<br><br>
+<h4 style="text-align: center;">Location And Resort View</h4>
+<br><br>
+<div class="d-grid gap-2">
+  <button class="btn btn-dark btn-lg" type="submit"><a href="/book">Book Tickets Now (per person $2,695)</a></button>
+</div><br><br>
+<h2>Lefkada</h2><br>
+<p>Lefkada is a Greek island in the Ionian Sea, connected to the mainland by a causeway. West coast beaches like Porto Katsiki and Egremni feature
+  sheer cliffs and turquoise waters. The east coast is known for its traditional villages, including the seaside resort of Nydri. In the north,
+ Lefkada town is the island's gateway and capital. Vassiliki, in the south, attracts windsurfers.</p>
+ <p>This little treasure of an island in the Ionian Sea perhaps isn't as famous as some of its neighbours like Corfu and Kefalonia, but if you take
+a chance on Lefkada you won't regret it. The island boasts exquisite cuisine, idyllic coastal towns and some of the most beautiful beaches in Greece.</p>
+<p>We are offering five star resorts in our package with 3 time meal and other fun activites.</p>
+<br>
+<img src="/static/Lefkada.jpg" class="img-thumbnail" alt="Island"><img src="/static/lefkada resort.avif" class="img-thumbnail" alt="Resort">
+<br><br>
+<h4 style="text-align: center;">Location And Resort View</h4>
+<br><br>
+<div class="d-grid gap-2">
+  <button class="btn btn-dark btn-lg" type="submit"><a href="/book">Book Tickets Now (per person $3,500)</a></button>
+  </div><br><br>
+<h2>Grand Turk</h2><br>
+<p>Grand Turk Island is the capital island of the Turks and Caicos archipelago, in the Atlantic Ocean. It’s dotted with the remains of salt ponds and
+windmills from the island’s sea salt industry, prevalent from the 17th to 20th century. The 19th-century Grand Turk Lighthouse is perched on a rocky bluff
+in the north. Beaches with clear water ring the island, which is home to wild horses and donkeys.</p>
+<p>Grand Turk is a perfect cruise ship destination. You’ll find a small tropical island with a great selection of water sports, interesting historical
+ sights, and best of all, exquisite beaches.The Turks and Caicos features a beautiful marine environment, and it’s no wonder that many of the island’s
+top activities happen on or in the ocean. There’s lounging on the beach, scuba diving, snorkeling, boat charters, kayaking, stand-up paddleboarding, fishing,
+and whale watching.</p>
+<p>We are offering five star resorts in our package with 3 time meal and other fun activites.</p>
+<br>
+<img src="/static/grand turk.jpg" class="img-thumbnail" alt="Island"><img src="/static/grand turk resort.avif" class="img-thumbnail" alt="Resort">
+<br><br>
+<h4 style="text-align: center;">Location And Resort View</h4>
+<br><br>
+<div class="d-grid gap-2">
+  <button class="btn btn-dark btn-lg" type="submit"><a href="/book">Book Tickets Now (per person $1,300)</a></button>
+</div><br><br>
+</div>
+</div>
+{% endblock %}
